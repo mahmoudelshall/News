@@ -1,0 +1,22 @@
+<div class="container-fluid mt-4">
+    <div class="row mt-4">
+
+        <div *ngFor="let new of news" class="col-md-4 col-lg-3 col-sm-6">
+
+
+
+            <div class="card" style="width:100%">
+                <img [src]="new.urlToImage" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{new.title}}</h5>
+                  <p class="card-text">{{new.description}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+
+        </div>
+
+
+    </div>
+</div>
